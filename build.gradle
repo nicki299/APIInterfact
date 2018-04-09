@@ -14,9 +14,10 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+//apply plugin: 'org.springframework.boot-test'
 
-group = 'com.hsblox'
-archivesBaseName = 'API'
+group = 'com.hsblox.api'
+archivesBaseName = 'api'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -31,9 +32,10 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-data-rest")
 	compile("com.h2database:h2")
 	compile("com.microsoft.sqlserver:mssql-jdbc:6.1.0.jre8")
-	compile('org.json:json:20171018')
-	//testCompile("org.sl4j:sl4j-simple:1.6.1")
-	testCompile("junit:junit")
-	testCompile ('org.mockito:mockito-core:2.7.22')
-	compile("org.springframework.boot:spring-boot-starter-test")
+	compile("org.json:json:20171018")
+    compile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("junit:junit")
+    testCompile ('org.mockito:mockito-core:2.7.22')
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+//	testCompile("org.springframework.boot:spring-boot-starter-tomcat")
 }
