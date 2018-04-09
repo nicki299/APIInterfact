@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * Created by devops on 4/6/18.
+ * Created by devops on 4/6/18. This can be created
  */
 @Entity
 @Table(name = "PARAMETERS")
