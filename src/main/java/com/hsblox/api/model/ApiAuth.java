@@ -17,7 +17,7 @@ public class ApiAuth {
     private String certificatePrivateKey;
     private String refreshToken;
     private String endPointUri;
-    // foriegn key
+    // foriegn key this is the foreign key
     private Long interfaceId;
 
     public ApiAuth() {
